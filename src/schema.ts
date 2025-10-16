@@ -1,5 +1,5 @@
-import {definePermissions, type Schema as ZeroSchema, createBuilder} from '@rocicorp/zero'
-import {schema as genSchema} from './schema.gen.js'
+import { type Schema as ZeroSchema, definePermissions } from "@rocicorp/zero";
+import { schema as genSchema } from "./schema.gen.js";
 
 export interface AuthContext {
   user: {
@@ -12,11 +12,6 @@ export const schema = {
   ...genSchema,
   enableLegacyMutators: false,
   enableLegacyQueries: false,
-} as const satisfies ZeroSchema
+} satisfies ZeroSchema;
 
-export const builder = createBuilder(schema)
-
-export type Schema = typeof schema
-
-// oxlint-disable-next-line no-empty-object-type
-export const permissions = definePermissions<{}, Schema>(schema, () => ({}))
+export const permissions = definePermissions(schema, () => ({}));
