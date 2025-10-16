@@ -154,6 +154,262 @@ export const schema = {
       },
       primaryKey: ["id"],
     },
+    activeSubstances: {
+      name: "activeSubstances",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "id"
+          >,
+        },
+        name: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "name"
+          >,
+        },
+        unit: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "unit"
+          >,
+        },
+        calculationMode: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "calculationMode"
+          >,
+          serverName: "calculation_mode",
+        },
+        min: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "min"
+          >,
+        },
+        max: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "max"
+          >,
+        },
+        rounding: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "rounding"
+          >,
+        },
+        doseLimit: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "doseLimit"
+          >,
+          serverName: "dose_limit",
+        },
+        notes: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "notes"
+          >,
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstances",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "active_substance",
+    },
+    activeSubstancesCategories: {
+      name: "activeSubstancesCategories",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstancesCategories",
+            "id"
+          >,
+        },
+        activeSubstanceId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstancesCategories",
+            "activeSubstanceId"
+          >,
+          serverName: "active_substance_id",
+        },
+        categoryId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstancesCategories",
+            "categoryId"
+          >,
+          serverName: "category_id",
+        },
+        subcategoryId: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstancesCategories",
+            "subcategoryId"
+          >,
+          serverName: "subcategory_id",
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstancesCategories",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstancesCategories",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstancesCategories",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstancesCategories",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstancesCategories",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "activeSubstancesCategories",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "active_substance_category",
+    },
     apikey: {
       name: "apikey",
       columns: {
@@ -361,6 +617,414 @@ export const schema = {
       },
       primaryKey: ["id"],
     },
+    batches: {
+      name: "batches",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "id"
+          >,
+        },
+        name: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "name"
+          >,
+        },
+        expiryDate: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "expiryDate"
+          >,
+          serverName: "expiry_date",
+        },
+        locationId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "locationId"
+          >,
+          serverName: "location_id",
+        },
+        sectionId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "sectionId"
+          >,
+          serverName: "section_id",
+        },
+        wardId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "wardId"
+          >,
+          serverName: "ward_id",
+        },
+        tradeNameId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "tradeNameId"
+          >,
+          serverName: "trade_name_id",
+        },
+        quantity: {
+          type: "number",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "quantity"
+          >,
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "batches",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "batch",
+    },
+    containerMaterials: {
+      name: "containerMaterials",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "containerMaterials",
+            "id"
+          >,
+        },
+        name: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "containerMaterials",
+            "name"
+          >,
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "containerMaterials",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "containerMaterials",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "containerMaterials",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "containerMaterials",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "containerMaterials",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "containerMaterials",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "container_material",
+    },
+    contraindications: {
+      name: "contraindications",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "contraindications",
+            "id"
+          >,
+        },
+        name: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "contraindications",
+            "name"
+          >,
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "contraindications",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "contraindications",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "contraindications",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "contraindications",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "contraindications",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "contraindications",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "contraindication",
+    },
+    groups: {
+      name: "groups",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "groups",
+            "id"
+          >,
+        },
+        name: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "groups",
+            "name"
+          >,
+        },
+        description: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "groups",
+            "description"
+          >,
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "groups",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "groups",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "groups",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "groups",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "groups",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "groups",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "group",
+    },
     jwks: {
       name: "jwks",
       columns: {
@@ -405,6 +1069,488 @@ export const schema = {
         },
       },
       primaryKey: ["id"],
+    },
+    locations: {
+      name: "locations",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "locations",
+            "id"
+          >,
+        },
+        name: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "locations",
+            "name"
+          >,
+        },
+        code: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "locations",
+            "code"
+          >,
+        },
+        address: {
+          type: "json",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "locations",
+            "address"
+          >,
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "locations",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "locations",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "locations",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "locations",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "locations",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "locations",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "location",
+    },
+    productCategories: {
+      name: "productCategories",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productCategories",
+            "id"
+          >,
+        },
+        name: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productCategories",
+            "name"
+          >,
+        },
+        type: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productCategories",
+            "type"
+          >,
+        },
+        status: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productCategories",
+            "status"
+          >,
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productCategories",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productCategories",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productCategories",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productCategories",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productCategories",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productCategories",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "product_category",
+    },
+    productSubcategories: {
+      name: "productSubcategories",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productSubcategories",
+            "id"
+          >,
+        },
+        name: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productSubcategories",
+            "name"
+          >,
+        },
+        parentId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productSubcategories",
+            "parentId"
+          >,
+          serverName: "parent_id",
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productSubcategories",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productSubcategories",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productSubcategories",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productSubcategories",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productSubcategories",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "productSubcategories",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "product_subcategory",
+    },
+    sections: {
+      name: "sections",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "id"
+          >,
+        },
+        name: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "name"
+          >,
+        },
+        code: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "code"
+          >,
+        },
+        locationId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "locationId"
+          >,
+          serverName: "location_id",
+        },
+        type: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "type"
+          >,
+        },
+        status: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "status"
+          >,
+        },
+        costCenterNumber: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "costCenterNumber"
+          >,
+          serverName: "cost_center_number",
+        },
+        orderNumber: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "orderNumber"
+          >,
+          serverName: "order_number",
+        },
+        movementType: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "movementType"
+          >,
+          serverName: "movement_type",
+        },
+        address: {
+          type: "json",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "address"
+          >,
+        },
+        deliveryAddress: {
+          type: "json",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "deliveryAddress"
+          >,
+          serverName: "delivery_address",
+        },
+        ikNumber: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "ikNumber"
+          >,
+          serverName: "ik_number",
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "sections",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "section",
     },
     session: {
       name: "session",
@@ -499,6 +1645,199 @@ export const schema = {
         },
       },
       primaryKey: ["id"],
+    },
+    tradeNames: {
+      name: "tradeNames",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "id"
+          >,
+        },
+        activeSubstanceId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "activeSubstanceId"
+          >,
+          serverName: "active_substance_id",
+        },
+        producerId: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "producerId"
+          >,
+          serverName: "producer_id",
+        },
+        supplierId: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "supplierId"
+          >,
+          serverName: "supplier_id",
+        },
+        labelName: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "labelName"
+          >,
+          serverName: "label_name",
+        },
+        strength: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "strength"
+          >,
+        },
+        density: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "density"
+          >,
+        },
+        volume: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "volume"
+          >,
+        },
+        articleNumber: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "articleNumber"
+          >,
+          serverName: "article_number",
+        },
+        contraindicationId: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "contraindicationId"
+          >,
+          serverName: "contraindication_id",
+        },
+        minConcentration: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "minConcentration"
+          >,
+          serverName: "min_concentration",
+        },
+        maxConcentration: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "maxConcentration"
+          >,
+          serverName: "max_concentration",
+        },
+        containerMaterialId: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "containerMaterialId"
+          >,
+          serverName: "container_material_id",
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "tradeNames",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "trade_name",
     },
     user: {
       name: "user",
@@ -629,6 +1968,270 @@ export const schema = {
       },
       primaryKey: ["id"],
     },
+    userAccessLocation: {
+      name: "userAccessLocation",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userAccessLocation",
+            "id"
+          >,
+        },
+        userId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userAccessLocation",
+            "userId"
+          >,
+          serverName: "user_id",
+        },
+        locationId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userAccessLocation",
+            "locationId"
+          >,
+          serverName: "location_id",
+        },
+        sectionId: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userAccessLocation",
+            "sectionId"
+          >,
+          serverName: "section_id",
+        },
+        wardId: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userAccessLocation",
+            "wardId"
+          >,
+          serverName: "ward_id",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "user_access_location",
+    },
+    userGroups: {
+      name: "userGroups",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userGroups",
+            "id"
+          >,
+        },
+        userId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userGroups",
+            "userId"
+          >,
+          serverName: "user_id",
+        },
+        groupId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userGroups",
+            "groupId"
+          >,
+          serverName: "group_id",
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userGroups",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userGroups",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userGroups",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userGroups",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userGroups",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "userGroups",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "user_group",
+    },
+    vendors: {
+      name: "vendors",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "vendors",
+            "id"
+          >,
+        },
+        name: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "vendors",
+            "name"
+          >,
+        },
+        type: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "vendors",
+            "type"
+          >,
+        },
+        address: {
+          type: "json",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "vendors",
+            "address"
+          >,
+        },
+        notes: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "vendors",
+            "notes"
+          >,
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "vendors",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "vendors",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "vendors",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "vendors",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "vendors",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "vendors",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "vendor",
+    },
     verification: {
       name: "verification",
       columns: {
@@ -692,8 +2295,494 @@ export const schema = {
       },
       primaryKey: ["id"],
     },
+    wards: {
+      name: "wards",
+      columns: {
+        id: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "id"
+          >,
+        },
+        name: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "name"
+          >,
+        },
+        code: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "code"
+          >,
+        },
+        locationId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "locationId"
+          >,
+          serverName: "location_id",
+        },
+        sectionId: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "sectionId"
+          >,
+          serverName: "section_id",
+        },
+        status: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "status"
+          >,
+        },
+        costCenterNumber: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "costCenterNumber"
+          >,
+          serverName: "cost_center_number",
+        },
+        orderNumber: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "orderNumber"
+          >,
+          serverName: "order_number",
+        },
+        movementType: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "movementType"
+          >,
+          serverName: "movement_type",
+        },
+        createdAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "createdAt"
+          >,
+          serverName: "created_at",
+        },
+        updatedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "updatedAt"
+          >,
+          serverName: "updated_at",
+        },
+        deletedAt: {
+          type: "number",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "deletedAt"
+          >,
+          serverName: "deleted_at",
+        },
+        createdBy: {
+          type: "string",
+          optional: false,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "createdBy"
+          >,
+          serverName: "created_by",
+        },
+        updatedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "updatedBy"
+          >,
+          serverName: "updated_by",
+        },
+        deletedBy: {
+          type: "string",
+          optional: true,
+          customType: null as unknown as ZeroCustomType<
+            ZeroSchema,
+            "wards",
+            "deletedBy"
+          >,
+          serverName: "deleted_by",
+        },
+      },
+      primaryKey: ["id"],
+      serverName: "ward",
+    },
   },
-  relationships: {},
+  relationships: {
+    activeSubstancesCategories: {
+      productCategory: [
+        {
+          sourceField: ["categoryId"],
+          destField: ["id"],
+          destSchema: "productCategories",
+          cardinality: "one",
+        },
+      ],
+      productSubcategory: [
+        {
+          sourceField: ["subcategoryId"],
+          destField: ["id"],
+          destSchema: "productSubcategories",
+          cardinality: "one",
+        },
+      ],
+      activeSubstance: [
+        {
+          sourceField: ["activeSubstanceId"],
+          destField: ["id"],
+          destSchema: "activeSubstances",
+          cardinality: "one",
+        },
+      ],
+    },
+    activeSubstances: {
+      activeSubstancesCategories: [
+        {
+          sourceField: ["id"],
+          destField: ["activeSubstanceId"],
+          destSchema: "activeSubstancesCategories",
+          cardinality: "many",
+        },
+      ],
+      tradeNames: [
+        {
+          sourceField: ["id"],
+          destField: ["activeSubstanceId"],
+          destSchema: "tradeNames",
+          cardinality: "many",
+        },
+      ],
+    },
+    batches: {
+      location: [
+        {
+          sourceField: ["locationId"],
+          destField: ["id"],
+          destSchema: "locations",
+          cardinality: "one",
+        },
+      ],
+      section: [
+        {
+          sourceField: ["sectionId"],
+          destField: ["id"],
+          destSchema: "sections",
+          cardinality: "one",
+        },
+      ],
+      ward: [
+        {
+          sourceField: ["wardId"],
+          destField: ["id"],
+          destSchema: "wards",
+          cardinality: "one",
+        },
+      ],
+      tradeName: [
+        {
+          sourceField: ["tradeNameId"],
+          destField: ["id"],
+          destSchema: "tradeNames",
+          cardinality: "one",
+        },
+      ],
+    },
+    containerMaterials: {
+      tradeNames: [
+        {
+          sourceField: ["id"],
+          destField: ["containerMaterialId"],
+          destSchema: "tradeNames",
+          cardinality: "many",
+        },
+      ],
+    },
+    contraindications: {
+      tradeNames: [
+        {
+          sourceField: ["id"],
+          destField: ["contraindicationId"],
+          destSchema: "tradeNames",
+          cardinality: "many",
+        },
+      ],
+    },
+    locations: {
+      sections: [
+        {
+          sourceField: ["id"],
+          destField: ["locationId"],
+          destSchema: "sections",
+          cardinality: "many",
+        },
+      ],
+      wards: [
+        {
+          sourceField: ["id"],
+          destField: ["locationId"],
+          destSchema: "wards",
+          cardinality: "many",
+        },
+      ],
+      userAccessLocation: [
+        {
+          sourceField: ["id"],
+          destField: ["locationId"],
+          destSchema: "userAccessLocation",
+          cardinality: "many",
+        },
+      ],
+    },
+    productCategories: {
+      productSubcategories: [
+        {
+          sourceField: ["id"],
+          destField: ["parentId"],
+          destSchema: "productSubcategories",
+          cardinality: "many",
+        },
+      ],
+      activeSubstancesCategories: [
+        {
+          sourceField: ["id"],
+          destField: ["categoryId"],
+          destSchema: "activeSubstancesCategories",
+          cardinality: "many",
+        },
+      ],
+    },
+    productSubcategories: {
+      productCategory: [
+        {
+          sourceField: ["parentId"],
+          destField: ["id"],
+          destSchema: "productCategories",
+          cardinality: "one",
+        },
+      ],
+      activeSubstancesCategories: [
+        {
+          sourceField: ["id"],
+          destField: ["subcategoryId"],
+          destSchema: "activeSubstancesCategories",
+          cardinality: "many",
+        },
+      ],
+    },
+    sections: {
+      location: [
+        {
+          sourceField: ["locationId"],
+          destField: ["id"],
+          destSchema: "locations",
+          cardinality: "one",
+        },
+      ],
+      wards: [
+        {
+          sourceField: ["id"],
+          destField: ["sectionId"],
+          destSchema: "wards",
+          cardinality: "many",
+        },
+      ],
+      userAccessLocation: [
+        {
+          sourceField: ["id"],
+          destField: ["sectionId"],
+          destSchema: "userAccessLocation",
+          cardinality: "many",
+        },
+      ],
+    },
+    tradeNames: {
+      activeSubstance: [
+        {
+          sourceField: ["activeSubstanceId"],
+          destField: ["id"],
+          destSchema: "activeSubstances",
+          cardinality: "one",
+        },
+      ],
+      producer: [
+        {
+          sourceField: ["producerId"],
+          destField: ["id"],
+          destSchema: "vendors",
+          cardinality: "one",
+        },
+      ],
+      supplier: [
+        {
+          sourceField: ["supplierId"],
+          destField: ["id"],
+          destSchema: "vendors",
+          cardinality: "one",
+        },
+      ],
+      contraindication: [
+        {
+          sourceField: ["contraindicationId"],
+          destField: ["id"],
+          destSchema: "contraindications",
+          cardinality: "one",
+        },
+      ],
+      containerMaterial: [
+        {
+          sourceField: ["containerMaterialId"],
+          destField: ["id"],
+          destSchema: "containerMaterials",
+          cardinality: "one",
+        },
+      ],
+      batches: [
+        {
+          sourceField: ["id"],
+          destField: ["tradeNameId"],
+          destSchema: "batches",
+          cardinality: "many",
+        },
+      ],
+    },
+    userAccessLocation: {
+      user: [
+        {
+          sourceField: ["userId"],
+          destField: ["id"],
+          destSchema: "user",
+          cardinality: "one",
+        },
+      ],
+      location: [
+        {
+          sourceField: ["locationId"],
+          destField: ["id"],
+          destSchema: "locations",
+          cardinality: "one",
+        },
+      ],
+      section: [
+        {
+          sourceField: ["sectionId"],
+          destField: ["id"],
+          destSchema: "sections",
+          cardinality: "one",
+        },
+      ],
+      ward: [
+        {
+          sourceField: ["wardId"],
+          destField: ["id"],
+          destSchema: "wards",
+          cardinality: "one",
+        },
+      ],
+    },
+    userGroups: {
+      user: [
+        {
+          sourceField: ["userId"],
+          destField: ["id"],
+          destSchema: "user",
+          cardinality: "one",
+        },
+      ],
+      group: [
+        {
+          sourceField: ["groupId"],
+          destField: ["id"],
+          destSchema: "groups",
+          cardinality: "one",
+        },
+      ],
+    },
+    vendors: {
+      producerTradeNames: [
+        {
+          sourceField: ["id"],
+          destField: ["producerId"],
+          destSchema: "tradeNames",
+          cardinality: "many",
+        },
+      ],
+      suppliedTradeNames: [
+        {
+          sourceField: ["id"],
+          destField: ["supplierId"],
+          destSchema: "tradeNames",
+          cardinality: "many",
+        },
+      ],
+    },
+    wards: {
+      location: [
+        {
+          sourceField: ["locationId"],
+          destField: ["id"],
+          destSchema: "locations",
+          cardinality: "one",
+        },
+      ],
+      section: [
+        {
+          sourceField: ["sectionId"],
+          destField: ["id"],
+          destSchema: "sections",
+          cardinality: "one",
+        },
+      ],
+      userAccessLocation: [
+        {
+          sourceField: ["id"],
+          destField: ["wardId"],
+          destSchema: "userAccessLocation",
+          cardinality: "many",
+        },
+      ],
+    },
+  },
   enableLegacyQueries: true,
   enableLegacyMutators: true,
 } as const;
@@ -709,30 +2798,107 @@ export type Schema = typeof schema;
  */
 export type Account = Row<Schema["tables"]["account"]>;
 /**
+ * Represents a row from the "activeSubstances" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type ActiveSubstance = Row<Schema["tables"]["activeSubstances"]>;
+/**
+ * Represents a row from the "activeSubstancesCategories" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type ActiveSubstancesCategory = Row<
+  Schema["tables"]["activeSubstancesCategories"]
+>;
+/**
  * Represents a row from the "apikey" table.
  * This type is auto-generated from your Drizzle schema definition.
  */
 export type Apikey = Row<Schema["tables"]["apikey"]>;
+/**
+ * Represents a row from the "batches" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type Batch = Row<Schema["tables"]["batches"]>;
+/**
+ * Represents a row from the "containerMaterials" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type ContainerMaterial = Row<Schema["tables"]["containerMaterials"]>;
+/**
+ * Represents a row from the "contraindications" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type Contraindication = Row<Schema["tables"]["contraindications"]>;
+/**
+ * Represents a row from the "groups" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type Group = Row<Schema["tables"]["groups"]>;
 /**
  * Represents a row from the "jwks" table.
  * This type is auto-generated from your Drizzle schema definition.
  */
 export type Jwk = Row<Schema["tables"]["jwks"]>;
 /**
+ * Represents a row from the "locations" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type Location = Row<Schema["tables"]["locations"]>;
+/**
+ * Represents a row from the "productCategories" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type ProductCategory = Row<Schema["tables"]["productCategories"]>;
+/**
+ * Represents a row from the "productSubcategories" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type ProductSubcategory = Row<Schema["tables"]["productSubcategories"]>;
+/**
+ * Represents a row from the "sections" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type Section = Row<Schema["tables"]["sections"]>;
+/**
  * Represents a row from the "session" table.
  * This type is auto-generated from your Drizzle schema definition.
  */
 export type Session = Row<Schema["tables"]["session"]>;
+/**
+ * Represents a row from the "tradeNames" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type TradeName = Row<Schema["tables"]["tradeNames"]>;
 /**
  * Represents a row from the "user" table.
  * This type is auto-generated from your Drizzle schema definition.
  */
 export type User = Row<Schema["tables"]["user"]>;
 /**
+ * Represents a row from the "userAccessLocation" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type UserAccessLocation = Row<Schema["tables"]["userAccessLocation"]>;
+/**
+ * Represents a row from the "userGroups" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type UserGroup = Row<Schema["tables"]["userGroups"]>;
+/**
+ * Represents a row from the "vendors" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type Vendor = Row<Schema["tables"]["vendors"]>;
+/**
  * Represents a row from the "verification" table.
  * This type is auto-generated from your Drizzle schema definition.
  */
 export type Verification = Row<Schema["tables"]["verification"]>;
+/**
+ * Represents a row from the "wards" table.
+ * This type is auto-generated from your Drizzle schema definition.
+ */
+export type Ward = Row<Schema["tables"]["wards"]>;
 
 /**
  * Represents the Zero schema query builder.
