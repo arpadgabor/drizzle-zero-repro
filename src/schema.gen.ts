@@ -11,7 +11,7 @@
 import type { Row } from "@rocicorp/zero";
 import { createBuilder } from "@rocicorp/zero";
 import type { DrizzleToZeroSchema, ZeroCustomType } from "drizzle-zero";
-import type * as drizzleSchema from "./database/schema";
+import type * as drizzleSchema from "./database/schema.js";
 
 type ZeroSchema = DrizzleToZeroSchema<typeof drizzleSchema>;
 

@@ -2,7 +2,7 @@
   "name": "drizzle-zero-repro",
   "type": "module",
   "scripts": {
-    "gen-zero": "drizzle-zero generate --format -s src/database/schema.ts -o src/schema.gen.ts",
+    "gen-zero": "drizzle-zero generate --js-file-extension --format -s src/database/schema.ts -o src/schema.gen.ts",
     "build": "pnpm run gen-zero && tsc"
   },
   "devDependencies": {
