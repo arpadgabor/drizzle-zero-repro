@@ -1,0 +1,39 @@
+{
+  "name": "zero-repro",
+  "image": "mcr.microsoft.com/devcontainers/base:trixie",
+  "onCreateCommand": ".devcontainer/init.sh",
+  "mounts": ["source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,readonly,type=bind"],
+  "features": {
+    "ghcr.io/nils-geistmann/devcontainers-features/zsh": {
+      "plugins": "git docker nvm"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "enableNonRootDocker": "true",
+      "moby": "false"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeGypDependencies": true,
+      "version": "lts",
+      "pnpmVersion": "latest",
+      "nvmVersion": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "oxc.oxc-vscode",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "antfu.smart-clicks",
+        "Gxl.git-graph-3",
+        "eamodio.gitlens",
+        "GitHub.vscode-pull-request-github",
+        "github.vscode-github-actions",
+        "antfu.pnpm-catalog-lens",
+        "pflannery.vscode-versionlens",
+        "cweijan.vscode-postgresql-client2"
+      ]
+    }
+  }
+}
